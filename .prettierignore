@@ -1,0 +1,10 @@
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# User-authored docs & scripts (not reformatted by Sprint 1 tooling)
+README.md
+project_brief.md
+auto-shopper-plan/
+closet_shopper_x_outreach.py
+mobile/node_modules/
