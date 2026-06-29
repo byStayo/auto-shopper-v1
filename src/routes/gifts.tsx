@@ -61,9 +61,6 @@ function Gifts() {
           </motion.article>
         ))}
       </div>
-      
-      {/* Spacer to ensure last card and dock hint text are visible above the floating dock */}
-      <div className="h-16" aria-hidden="true" />
     </div>
   )
 }
