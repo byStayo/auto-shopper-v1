@@ -51,7 +51,7 @@ export default function CommandDock() {
   }
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 flex justify-center px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-50 flex justify-center px-3 pb-[max(0.25rem,env(safe-area-inset-bottom))]">
       <div className="pointer-events-auto flex w-full max-w-md flex-col items-stretch">
         <HistoryPeek
           open={dock.historyOpen}
@@ -135,7 +135,7 @@ export default function CommandDock() {
           </AnimatePresence>
         </motion.div>
 
-        <p className="pointer-events-none mt-1.5 text-center text-[10px] font-medium text-[var(--sea-ink-soft)]">
+        <p className="pointer-events-none mt-1 text-center text-[10px] font-medium text-[var(--sea-ink-soft)]">
           {dock.mode === 'nav'
             ? 'Swipe → to ask · drag ↑ for history'
             : 'Swipe ← for navigation'}
