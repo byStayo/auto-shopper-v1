@@ -29,7 +29,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         </div>
       </header>
 
-      <main className="dock-safe-area mx-auto w-full max-w-md flex-1 px-3 pt-2">
+      <main className="dock-safe-area mx-auto w-full max-w-md flex-1 px-3 pt-2 pb-32">
         {children}
       </main>
 
