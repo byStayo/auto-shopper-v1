@@ -76,7 +76,7 @@ function Style() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden pb-24">
+    <div className="min-h-screen bg-black text-white font-sans overflow-hidden pb-[calc(6rem+env(safe-area-inset-bottom))]">
       {/* Header */}
       {renderHeader()}
 
@@ -178,7 +178,7 @@ function Style() {
       )}
 
       {/* Navigation Bar */}
-      <nav className="fixed bottom-0 left-0 right-0 h-24 bg-black/80 backdrop-blur-xl border-t border-white/10 flex items-center justify-around px-4">
+      <nav className="fixed bottom-0 left-0 right-0 h-[calc(6rem+env(safe-area-inset-bottom))] pb-[env(safe-area-inset-bottom)] bg-black/80 backdrop-blur-xl border-t border-white/10 flex items-center justify-around px-4">
         <NavItem icon={<Home />} label="Home" />
         <NavItem icon={<Layers />} label="Closet" />
         <NavItem icon={<Star />} label="Style" active />
