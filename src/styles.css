@@ -503,7 +503,7 @@ a {
   --glass-shadow: rgba(23, 58, 64, 0.18);
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --safe-top: env(safe-area-inset-top, 0px);
-  --dock-height: 64px;
+  --dock-height: 80px;
 }
 
 :root[data-theme='dark'],
@@ -595,7 +595,7 @@ a {
 
 /* Reserve space so the floating dock never covers page content. */
 .dock-safe-area {
-  padding-bottom: calc(var(--dock-height) + var(--safe-bottom) + 2.25rem);
+  padding-bottom: calc(var(--dock-height) + var(--safe-bottom) + 2.5rem);
 }
 
 /* iOS Safari auto-zooms any focused field whose font-size is < 16px.
