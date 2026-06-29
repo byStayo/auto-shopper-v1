@@ -76,7 +76,7 @@ function Style() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden pb-16">
+    <div className="min-h-screen bg-black text-white font-sans overflow-hidden pb-32">
       {/* Header */}
       {renderHeader()}
 
@@ -177,8 +177,8 @@ function Style() {
         </div>
       )}
 
-      {/* Navigation Bar */}
-      <nav className="fixed bottom-0 left-0 right-0 h-16 bg-black/80 backdrop-blur-xl border-t border-white/10 flex items-center justify-around px-4">
+      {/* Navigation Bar - Floating Dock */}
+      <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-md h-20 bg-white/10 backdrop-blur-[20px] border border-white/20 rounded-[40px] shadow-2xl flex items-center justify-around px-4 z-50">
         <NavItem icon={<Home />} label="Home" />
         <NavItem icon={<Layers />} label="Closet" />
         <NavItem icon={<Star />} label="Style" active />
