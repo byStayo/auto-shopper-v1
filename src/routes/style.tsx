@@ -71,7 +71,7 @@ function Style() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
+    <div className="min-h-screen bg-black text-white font-sans overflow-y-auto overflow-x-hidden">
       {/* Header */}
       {renderHeader()}
 
