@@ -7,12 +7,7 @@ import {
   RefreshCw, 
   Save, 
   Heart, 
-  Share2, 
-  Home, 
-  Layers, 
-  Star, 
-  ShoppingBag, 
-  Gift 
+  Share2 
 } from 'lucide-react'
 
 export const Route = createFileRoute('/style')({ component: Style })
@@ -76,7 +71,7 @@ function Style() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-hidden pb-32">
+    <div className="min-h-screen bg-black text-white font-sans overflow-hidden">
       {/* Header */}
       {renderHeader()}
 
@@ -176,24 +171,6 @@ function Style() {
           </motion.button>
         </div>
       )}
-
-      {/* Navigation Bar - Floating Dock */}
-      <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-md h-20 bg-white/10 backdrop-blur-[20px] border border-white/20 rounded-[40px] shadow-2xl flex items-center justify-around px-4 z-50">
-        <NavItem icon={<Home />} label="Home" />
-        <NavItem icon={<Layers />} label="Closet" />
-        <NavItem icon={<Star />} label="Style" active />
-        <NavItem icon={<ShoppingBag />} label="Shop" />
-        <NavItem icon={<Gift />} label="Gifts" />
-      </nav>
-    </div>
-  )
-}
-
-function NavItem({ icon, label, active = false }: { icon: React.ReactNode, label: string, active?: boolean }) {
-  return (
-    <div className={`flex flex-col items-center gap-1 ${active ? "text-[#A8C57B]" : "text-white/40"}`}>
-      {React.cloneElement(icon as React.ReactElement, { className: "w-6 h-6" })}
-      <span className="text-[10px] font-medium">{label}</span>
     </div>
   )
 }
